@@ -1,3 +1,7 @@
+import { seoMoneyPages } from './seoContent';
+
+export { seoMoneyPages };
+
 export const siteConfig = {
   name: 'VlaDDoS',
   title: 'Private Affiliate Network',
@@ -106,15 +110,30 @@ export const brandSignals = [
 export const partnerFitGroups = [
   {
     title: 'Affiliates we work with',
-    items: ['SEO and comparison traffic', 'Paid acquisition and media buying', 'Influencer and creator traffic', 'Community-led traffic and direct funnels'],
+    items: [
+      'SEO and comparison traffic',
+      'Paid acquisition and media buying',
+      'Influencer and creator traffic',
+      'Community-led traffic and direct funnels',
+    ],
   },
   {
     title: 'Advertisers and operators',
-    items: ['Casino and betting brands', 'Crypto and trading products', 'Performance-led acquisition teams', 'Direct offers needing curated traffic'],
+    items: [
+      'Casino and betting brands',
+      'Crypto and trading products',
+      'Performance-led acquisition teams',
+      'Direct offers needing curated traffic',
+    ],
   },
   {
     title: 'What speeds up qualification',
-    items: ['Clear top GEOs', 'Traffic source transparency', 'Real monthly volume or budget', 'Fast communication and realistic deal expectations'],
+    items: [
+      'Clear top GEOs',
+      'Traffic source transparency',
+      'Real monthly volume or budget',
+      'Fast communication and realistic deal expectations',
+    ],
   },
 ];
 
@@ -249,6 +268,72 @@ export const infraCards = [
     text: 'Weak briefs, vague source explanations, and unrealistic expectations are filtered before they waste operator or affiliate time.',
   },
 ];
+
+export const stackRows = [
+  {
+    label: 'Frontend',
+    value: 'Next.js 14, React 18, TypeScript, Tailwind CSS',
+  },
+  {
+    label: 'Content model',
+    value: 'Data-driven pages, SEO landings, insight articles',
+  },
+  {
+    label: 'Lead routing',
+    value: 'Telegram Bot API and webhook-based intake delivery',
+  },
+  {
+    label: 'Deployment',
+    value: 'Vercel-ready app routing with server action endpoint',
+  },
+];
+
+export const operatingPrinciples = [
+  'Selective routing beats open-directory noise.',
+  'Qualified briefs get priority over vague outreach.',
+  'Traffic source clarity matters more than inflated claims.',
+  'Telegram-first handling keeps deal flow fast and accountable.',
+];
+
+export const trustPages = [
+  { href: '/about', label: 'About' },
+  { href: '/partners', label: 'Partners' },
+  { href: '/for-affiliates', label: 'For Affiliates' },
+  { href: '/for-advertisers', label: 'For Advertisers' },
+  { href: '/faq', label: 'FAQ' },
+  { href: '/contact', label: 'Contact' },
+  { href: '/privacy-policy', label: 'Privacy Policy' },
+  { href: '/terms', label: 'Terms' },
+  { href: '/cookie-policy', label: 'Cookie Policy' },
+];
+
+export const telegramRoutes = [
+  {
+    title: 'Telegram desk',
+    href: `https://t.me/${siteConfig.telegramAccount.replace('@', '')}`,
+    description: 'Move a qualified conversation into direct Telegram handling faster.',
+  },
+  {
+    title: 'Owner contact',
+    href: `https://t.me/${siteConfig.ownerTelegram.replace('@', '')}`,
+    description: 'Use direct owner contact for serious commercial outreach and routing questions.',
+  },
+  {
+    title: 'Channel',
+    href: `https://t.me/${siteConfig.telegramChannel.replace('@', '')}`,
+    description: 'Follow PAN updates, positioning, and brand-facing Telegram activity.',
+  },
+  {
+    title: 'Chat',
+    href: `https://t.me/${siteConfig.telegramChat.replace('@', '')}`,
+    description: 'Join the related community discussion layer around the project.',
+  },
+];
+
+export const seoLandingPageLinks = seoMoneyPages.map((page) => ({
+  href: `/${page.slug}`,
+  label: page.title,
+}));
 
 export const messageTemplates = {
   telegramText: encodeURIComponent(
