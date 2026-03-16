@@ -1,6 +1,6 @@
-import { seoMoneyPages } from './seoContent';
+import { seoLandingPages } from './seoContent';
 
-export { seoMoneyPages };
+export const seoMoneyPages = seoLandingPages;
 
 export const siteConfig = {
   name: 'VlaDDoS',
