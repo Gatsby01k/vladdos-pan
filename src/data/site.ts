@@ -1,6 +1,11 @@
 import { seoLandingPages } from './seoContent';
 
-export const seoMoneyPages = seoLandingPages;
+export const seoMoneyPages = seoLandingPages.map((page) => ({
+  href: `/${page.slug}`,
+  label: page.title,
+}));
+
+export const seoLandingPageLinks = seoMoneyPages;
 
 export const siteConfig = {
   name: 'VlaDDoS',
