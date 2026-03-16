@@ -298,23 +298,23 @@ export const trustPages = [
 export const telegramRoutes = [
   {
     title: 'Telegram desk',
-    href: `https://t.me/${siteConfig.telegramAccount.replace('@', '')}`,
-    description: 'Move a qualified conversation into direct Telegram handling faster.',
+    handle: siteConfig.telegramAccount,
+    text: 'Move a qualified conversation into direct Telegram handling faster.',
   },
   {
     title: 'Owner contact',
-    href: `https://t.me/${siteConfig.ownerTelegram.replace('@', '')}`,
-    description: 'Use direct owner contact for serious commercial outreach and routing questions.',
+    handle: siteConfig.ownerTelegram,
+    text: 'Use direct owner contact for serious commercial outreach and routing questions.',
   },
   {
     title: 'Channel',
-    href: `https://t.me/${siteConfig.telegramChannel.replace('@', '')}`,
-    description: 'Follow PAN updates, positioning, and brand-facing Telegram activity.',
+    handle: siteConfig.telegramChannel,
+    text: 'Follow PAN updates, positioning, and brand-facing Telegram activity.',
   },
   {
     title: 'Chat',
-    href: `https://t.me/${siteConfig.telegramChat.replace('@', '')}`,
-    description: 'Join the related community discussion layer around the project.',
+    handle: siteConfig.telegramChat,
+    text: 'Join the related community discussion layer around the project.',
   },
 ];
 
