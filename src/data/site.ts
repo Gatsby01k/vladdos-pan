@@ -323,10 +323,6 @@ export const telegramRoutes = [
   },
 ];
 
-export const seoLandingPageLinks = seoMoneyPages.map((page) => ({
-  href: `/${page.slug}`,
-  label: page.title,
-}));
 
 export const messageTemplates = {
   telegramText: encodeURIComponent(
