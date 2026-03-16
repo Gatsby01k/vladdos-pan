@@ -270,22 +270,10 @@ export const infraCards = [
 ];
 
 export const stackRows = [
-  {
-    label: 'Frontend',
-    value: 'Next.js 14, React 18, TypeScript, Tailwind CSS',
-  },
-  {
-    label: 'Content model',
-    value: 'Data-driven pages, SEO landings, insight articles',
-  },
-  {
-    label: 'Lead routing',
-    value: 'Telegram Bot API and webhook-based intake delivery',
-  },
-  {
-    label: 'Deployment',
-    value: 'Vercel-ready app routing with server action endpoint',
-  },
+  ['Frontend', 'Next.js 14, React 18, TypeScript, Tailwind CSS'],
+  ['Content model', 'Data-driven pages, SEO landings, insight articles'],
+  ['Lead routing', 'Telegram Bot API and webhook-based intake delivery'],
+  ['Deployment', 'Vercel-ready app routing with server endpoint support'],
 ];
 
 export const operatingPrinciples = [
