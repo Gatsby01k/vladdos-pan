@@ -28,6 +28,7 @@ export const offerCards = [
     model: 'CPA up to $120 / Hybrid available',
     traffic: 'SEO, Telegram, community, media buying',
     fit: 'Affiliates already running crypto or casino-intent traffic with clear source mechanics, stable funnels, and real volume.',
+    status: 'Scaling',
   },
   {
     title: 'iGaming Direct - High intent',
@@ -35,6 +36,7 @@ export const offerCards = [
     model: 'CPA / RevShare / custom tests',
     traffic: 'SEO, PPC, comparison sites, content',
     fit: 'Operators and affiliates looking for direct routing, cleaner qualification, and less marketplace noise.',
+    status: 'Testing',
   },
   {
     title: 'Performance Offers - Fast qualification',
@@ -42,6 +44,7 @@ export const offerCards = [
     model: 'CPA with scaling reviews',
     traffic: 'Paid traffic, funnels, performance buying',
     fit: 'Media buyers who can explain source logic, funnel structure, compliance limits, and the test they want to launch now.',
+    status: 'Limited',
   },
   {
     title: 'Telegram-led Community Routes',
@@ -49,6 +52,7 @@ export const offerCards = [
     model: 'Hybrid / custom structures',
     traffic: 'Telegram, community funnels, creator-led traffic',
     fit: 'Community owners with trust-heavy audiences and advertisers ready for direct communication, faster feedback, and support.',
+    status: 'Testing',
   },
 ];
 
