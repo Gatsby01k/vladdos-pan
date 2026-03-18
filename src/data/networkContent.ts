@@ -27,28 +27,28 @@ export const offerCards = [
     geo: 'UK / CA / DE / Nordics',
     model: 'CPA up to $120 / Hybrid available',
     traffic: 'SEO, Telegram, community, media buying',
-    fit: 'Best for affiliates already running crypto-intent or casino-intent traffic with clear source mechanics and real volume.',
+    fit: 'Affiliates already running crypto or casino-intent traffic with clear source mechanics, stable funnels, and real volume.',
   },
   {
     title: 'iGaming Direct - High intent',
     geo: 'Tier 1 / Tier 2 mix',
     model: 'CPA / RevShare / custom tests',
     traffic: 'SEO, PPC, comparison sites, content',
-    fit: 'Best for operators and affiliates who want direct routing, clear qualification, and less marketplace noise.',
+    fit: 'Operators and affiliates looking for direct routing, cleaner qualification, and less marketplace noise.',
   },
   {
     title: 'Performance Offers - Fast qualification',
     geo: 'Multi-geo',
     model: 'CPA with scaling reviews',
     traffic: 'Paid traffic, funnels, performance buying',
-    fit: 'Best for media buyers who can explain source, funnel, compliance limits, and the test they want to run now.',
+    fit: 'Media buyers who can explain source logic, funnel structure, compliance limits, and the test they want to launch now.',
   },
   {
     title: 'Telegram-led Community Routes',
     geo: 'Crypto-friendly and mixed-regulation GEOs',
     model: 'Hybrid / custom structures',
     traffic: 'Telegram, community funnels, creator-led traffic',
-    fit: 'Best for community owners with trust-heavy audiences and advertisers ready for direct communication and support.',
+    fit: 'Community owners with trust-heavy audiences and advertisers ready for direct communication, faster feedback, and support.',
   },
 ];
 
