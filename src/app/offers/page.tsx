@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { motion } from 'framer-motion';
 import BackgroundShell from '@/components/ui/BackgroundShell';
 import Footer from '@/components/ui/Footer';
 import QuickContactPanel from '@/components/ui/QuickContactPanel';
@@ -63,17 +62,13 @@ export default function OffersPage() {
           </div>
 
           <div className="mt-6 grid gap-3 md:grid-cols-3">
-            {qualificationNotes.map((item, index) => (
-              <motion.div
+            {qualificationNotes.map((item) => (
+              <div
                 key={item}
-                initial={{ opacity: 0, y: 18 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.42, delay: index * 0.06, ease: 'easeOut' }}
                 className="rounded-[1.15rem] border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.02] px-4 py-4 text-sm leading-6 text-white/72 shadow-[0_10px_30px_rgba(0,0,0,0.18)]"
               >
                 {item}
-              </motion.div>
+              </div>
             ))}
           </div>
 
@@ -90,13 +85,9 @@ export default function OffersPage() {
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {offerCards.map((offer, index) => (
-              <motion.div
+            {offerCards.map((offer) => (
+              <div
                 key={offer.title}
-                initial={{ opacity: 0, y: 18 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.18 }}
-                transition={{ duration: 0.45, delay: index * 0.07, ease: 'easeOut' }}
                 className="group relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-white/[0.055] to-white/[0.02] p-5 shadow-[0_18px_60px_rgba(0,0,0,0.28)] transition duration-300 hover:-translate-y-1 hover:border-white/16 hover:shadow-[0_22px_80px_rgba(0,0,0,0.34)] sm:p-6"
               >
                 <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.08),transparent_38%)] opacity-80" />
@@ -146,19 +137,13 @@ export default function OffersPage() {
                     </TrackedLink>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </section>
 
         <section className="grid gap-6 lg:grid-cols-[1.05fr_.95fr]">
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.45, ease: 'easeOut' }}
-            className="panel p-5 sm:p-7"
-          >
+          <div className="panel p-5 sm:p-7">
             <div className="eyebrow">route categories</div>
             <div className="mt-5 grid gap-3 text-sm text-white/72">
               {[
@@ -176,15 +161,9 @@ export default function OffersPage() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.45, delay: 0.08, ease: 'easeOut' }}
-            className="panel p-5 sm:p-7"
-          >
+          <div className="panel p-5 sm:p-7">
             <div className="eyebrow">deal structures</div>
             <div className="mt-5 grid gap-3 text-sm text-white/72">
               {dealStructures.map((item) => (
@@ -198,10 +177,11 @@ export default function OffersPage() {
             </div>
 
             <p className="mt-5 text-sm leading-7 text-white/72">
-              Final terms depend on source quality, GEO alignment, advertiser rules,
-              compliance limits, and the scale the route can actually support.
+              Final terms depend on source quality, GEO alignment, advertiser
+              rules, compliance limits, and the scale the route can actually
+              support.
             </p>
-          </motion.div>
+          </div>
         </section>
 
         <QuickContactPanel compact />
